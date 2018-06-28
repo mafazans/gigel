@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//used at validating data within validate register
+//used at validating data within validateregister
 app.use(expressValidator());
 
 app.use('/', routes);

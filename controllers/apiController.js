@@ -54,3 +54,10 @@ exports.updateProfile = async (req, res) => {
 	).exec();
 	res.json({ status: true, message: 'Profile Updated' })
 }
+
+exports.resetPassword = async (req, res) => {
+	const user = await User.findOne({_id: req.userData.id });
+	user.password = req.body.password;
+	await user.save();
+	res.json({ status: true, message: 'Password updated'})
+}

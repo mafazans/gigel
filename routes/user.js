@@ -20,4 +20,10 @@ router.post('/editprofile',
 	catchErrors(apiController.updateProfile)
 );
 
+router.post('/resetpassword',
+	catchErrors(checkAuth),
+	userController.validatePassword,
+	catchErrors(apiController.resetPassword)
+);
+
 module.exports = router;
