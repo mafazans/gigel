@@ -84,22 +84,36 @@
 
   `POST`
   
+*  **Headers:**
+   `authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaWYubWFmYXphbjJAZ21haWwuY29tIiwiaWQiOiI1YjM1YTgwNDNjMDQ0ZTE4YzUzNWRiZDIiLCJpYXQiOjE1MzAyNDMzNjEsImV4cCI6MTUzMDI0Njk2MX0.I8LmdCbosLLvoUxblmMmySUo9w1wEsS5nLJwW5ueuSU`
+   `Content-Type:application/json`
+   
 *  **Data Params**
-
+   
    **Required:**
  
-   `email=[String]` <br />
-   `password=[String]` <br />
+   `name=[String]` <br />
+   `phone=[String]` <br />
+   
+   **Optional:**
+   `about=[String]` <br />
+   `address=[String]` <br />
+   `photo=[File]` <br />
 
 * **Success Response:**
 
   * **Code:** 200 OK <br />
-    **Content:** `{ "status": true, "message": "Auth Success!"}`
+    **Content:** `{ "status": true, "message": "Profile Updated"}`
  
 * **Error Response:**
 
   * **Code:** 401 Unauthorized <br />
     **Content:** `{ "status": false, "message": "Auth Failed" }`
+    
+    OR
+
+  * **Code:** 422 Unprocessable Entity <br />
+    **Content:** `{ "status": false, "message": "Please enter your number"" }`
 
 
 
