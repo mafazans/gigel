@@ -148,4 +148,4 @@
   OR
   
   * **Code:** 422 Unprocessable Entity <br />
-    **Content:** `{ "status": false, "message": "Please enter your number"" }`
+    **Content:** `{ "status": false, "message": ["The password confirm did not match!"] }`
