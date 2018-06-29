@@ -94,7 +94,7 @@
 * **Success Response:**
 
   * **Code:** 200 OK <br />
-    **Content:** `{ "status": true, "message": "Auth Success!", "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaWYubWFmYXphbjJAZ21haWwuY29tIiwiaWQiOiI1YjM1YTgwNDNjMDQ0ZTE4YzUzNWRiZDIiLCJpYXQiOjE1MzAyNDMwODgsImV4cCI6MTUzMDI0NjY4OH0.xYTrPdKCsWfWN-1eAHiOR5reCbhK6SaS4RvVrkAJaL8" }`
+    **Content:** `{ "status": true, "message": "Auth Success!"}`
  
 * **Error Response:**
 
