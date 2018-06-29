@@ -116,4 +116,36 @@
     **Content:** `{ "status": false, "message": "Please enter your number"" }`
 
 
+**Reset Password**
+----
+  Change password of the authenticated user.
 
+* **URL**
+
+  /api/user/resetpassword
+
+* **Method:**
+
+  `POST`
+  
+*  **Data Params**
+
+   **Required:**
+ 
+   `password=[String]` <br />
+   `password-confirm=[String]` <br />
+
+* **Success Response:**
+
+  * **Code:** 200 OK <br />
+    **Content:** `{ "status": true, "message": "Password updated" }`
+ 
+* **Error Response:**
+
+  * **Code:** 401 Unauthorized <br />
+    **Content:** `{ "status": false, "message": "Auth Failed" }`
+  
+  OR
+  
+  * **Code:** 422 Unprocessable Entity <br />
+    **Content:** `{ "status": false, "message": "Please enter your number"" }`
