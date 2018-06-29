@@ -41,7 +41,7 @@
   * **Code:** 422 Unprocessable Entity <br />
     **Content:** `{ "status": false, "message": "Please enter your number"" }`
     
-<br /> 
+
 **Login**
 ----
   Logging in the registered user using email and password.
@@ -69,10 +69,9 @@
 * **Error Response:**
 
   * **Code:** 401 Unauthorized <br />
-    **Content:** `{ "status": false, "message": "Auth Failed" 
+    **Content:** `{ "status": false, "message": "Auth Failed" }`
     
-
-<br /> 
+    
 **Edit Profile**
 ----
   Edit user profile of the authenticated user.
