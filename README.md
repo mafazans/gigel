@@ -6,7 +6,7 @@
 
 **Register**
 ----
-  Register new user using unique emailadress and unique phone number.
+  Register new user using unique email adress and unique phone number.
 
 * **URL**
 
@@ -20,36 +20,63 @@
 
    **Required:**
  
-   `email=[String]`
-   `password=[String]`
-   `password-confirm=[String]`
-   `phone=[String]`
-   `name=[String]`
+   `email=[String]` <br />
+   `password=[String]` <br />
+   `password-confirm=[String]` <br />
+   `phone=[String]` <br />
+   `name=[String]` <br />
 
 * **Success Response:**
 
-  * **Code:** 201 CREATED <br />
+  * **Code:** 201 Created <br />
     **Content:** `{ "status": true, "message": "Register Success!" }`
  
 * **Error Response:**
 
-  * **Code:** 404 NOT FOUND <br />
-    **Content:** `{ error : "User doesn't exist" }`
+  * **Code:** 409 Conflict<br />
+    **Content:** `{ "status": false, "message": "Mail exists" }`
 
   OR
 
-  * **Code:** 401 UNAUTHORIZED <br />
-    **Content:** `{ error : "You are unauthorized to make this request." }`
+  * **Code:** 422 Unprocessable Entity <br />
+    **Content:** `{ "status": false, "message": "Please enter your number"" }`
+    
+  
+**Login**
+----
+  Register new user using unique email adress and unique phone number.
 
-* **Sample Call:**
+* **URL**
 
-  ```javascript
-    $.ajax({
-      url: "/users/1",
-      dataType: "json",
-      type : "GET",
-      success : function(r) {
-        console.log(r);
-      }
-    });
+  /api/user/register
+
+* **Method:**
+
+  `POST`
+  
+*  **Data Params**
+
+   **Required:**
+ 
+   `email=[String]` <br />
+   `password=[String]` <br />
+   `password-confirm=[String]` <br />
+   `phone=[String]` <br />
+   `name=[String]` <br />
+
+* **Success Response:**
+
+  * **Code:** 201 Created <br />
+    **Content:** `{ "status": true, "message": "Register Success!" }`
+ 
+* **Error Response:**
+
+  * **Code:** 409 Conflict<br />
+    **Content:** `{ "status": false, "message": "Mail exists" }`
+
+  OR
+
+  * **Code:** 422 Unprocessable Entity <br />
+    **Content:** `{ "status": false, "message": "Please enter your number"" }`
   ```
+
