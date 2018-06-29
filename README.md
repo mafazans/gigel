@@ -16,6 +16,9 @@
 
   `POST`
   
+*  **Headers:**
+Content-Type:application/x-www-form-urlencoded
+  
 *  **Data Params**
 
    **Required:**
@@ -54,6 +57,9 @@
 
   `POST`
   
+*  **Headers:**
+Content-Type:application/x-www-form-urlencoded
+  
 *  **Data Params**
 
    **Required:**
@@ -86,7 +92,7 @@
   
 *  **Headers:**
    `authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaWYubWFmYXphbjJAZ21haWwuY29tIiwiaWQiOiI1YjM1YTgwNDNjMDQ0ZTE4YzUzNWRiZDIiLCJpYXQiOjE1MzAyNDMzNjEsImV4cCI6MTUzMDI0Njk2MX0.I8LmdCbosLLvoUxblmMmySUo9w1wEsS5nLJwW5ueuSU`
-   `Content-Type:application/json`
+   `Content-Type:multipart/form-data`
    
 *  **Data Params**
    
@@ -127,6 +133,10 @@
 * **Method:**
 
   `POST`
+  
+*  **Headers:**
+  authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaWYubWFmYXphbjJAZ21haWwuY29tIiwiaWQiOiI1YjM1YTgwNDNjMDQ0ZTE4YzUzNWRiZDIiLCJpYXQiOjE1MzAyNDMzNjEsImV4cCI6MTUzMDI0Njk2MX0.I8LmdCbosLLvoUxblmMmySUo9w1wEsS5nLJwW5ueuSU
+Content-Type:application/x-www-form-urlencoded
   
 *  **Data Params**
 
