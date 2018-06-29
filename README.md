@@ -17,7 +17,7 @@
   `POST`
   
 *  **Headers:**
-Content-Type:application/x-www-form-urlencoded
+Content-Type:application/json
   
 *  **Data Params**
 
@@ -28,6 +28,16 @@ Content-Type:application/x-www-form-urlencoded
    `password-confirm=[String]` <br />
    `phone=[String]` <br />
    `name=[String]` <br />
+   
+* **Body**
+`{
+	  "name": "fafa",
+	  "phone": "085899992418",
+	  "password": "fafa123456",
+	  "password-confirm": "fafa123456",
+	  "email": "mafazans@gmail.com"
+  }
+ `
 
 * **Success Response:**
 
@@ -58,7 +68,7 @@ Content-Type:application/x-www-form-urlencoded
   `POST`
   
 *  **Headers:**
-Content-Type:application/x-www-form-urlencoded
+Content-Type:application/json
   
 *  **Data Params**
 
@@ -66,6 +76,13 @@ Content-Type:application/x-www-form-urlencoded
  
    `email=[String]` <br />
    `password=[String]` <br />
+   
+* **Body**
+`{
+	  "password": "fafa123456",
+	  "email": "mafazans@gmail.com"
+  }
+`
 
 * **Success Response:**
 
@@ -136,7 +153,7 @@ Content-Type:application/x-www-form-urlencoded
   
 *  **Headers:**
   authorization:Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFyaWYubWFmYXphbjJAZ21haWwuY29tIiwiaWQiOiI1YjM1YTgwNDNjMDQ0ZTE4YzUzNWRiZDIiLCJpYXQiOjE1MzAyNDMzNjEsImV4cCI6MTUzMDI0Njk2MX0.I8LmdCbosLLvoUxblmMmySUo9w1wEsS5nLJwW5ueuSU
-Content-Type:application/x-www-form-urlencoded
+Content-Type:application/json
   
 *  **Data Params**
 
@@ -144,6 +161,13 @@ Content-Type:application/x-www-form-urlencoded
  
    `password=[String]` <br />
    `password-confirm=[String]` <br />
+
+* **Body**
+`{
+	  "password": "fafa123456",
+	  "password-confirm": "fafa123456"
+  }
+`
 
 * **Success Response:**
 
